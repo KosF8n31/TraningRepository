@@ -5,13 +5,18 @@ int main() {
 	setlocale(LC_ALL, "rus");
 	int a, b;
 	float div;
-	scanf_s("%d %d", &a, &b);
+	printf("Введите числитель - ");
+	scanf_s("%d", &a);
+	printf("\n");
+	printf("Введите знаменатель - ");
+	scanf_s("%d", &b);
+	printf("\n");
 	if (b == 0) {
 		printf("На ноль делят только в высшей математике!");
 	}
 	else {
 		div = a / b;
-		printf_s("%f\n", div);
+		printf_s("Результат деления = %.1f\n", div);
 	}
 	return 0;
 }
